@@ -18,7 +18,15 @@ function Media(notas){
 // Formata a saida de dados
 function Formatar(atleta){
   console.log(`Atleta: ${atleta.nome}`);
+  /*
+  Queria formatar essa saida para ficar visualmente bonita adicionando um espaço após 
+  cada virgula, mas a proposta não solicita isso. Mas para ref: atleta.notas.join(", ")
+  */
   console.log(`Notas Obtidas: ${atleta.notas}`);
+  /*
+  Aqui seria interessante formatar a saida numerica para dois digitos apos o ponto
+  .toFixed(2) no retorno da func Media
+  */
   console.log(`Média Válida: ${Media(atleta.notas)}\n`);
 }
 
